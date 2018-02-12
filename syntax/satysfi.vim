@@ -14,9 +14,9 @@ hi def link satysfiComment Comment
 syn keyword satysfiKeyword if then else before while do cycle controls
 syn match   satysfiKeyword "let\(\-\(rec\|mutable\|inline\|block\|math\)\)*"
 syn match   satysfiKeyword "\(inline\|block\|math\)\-cmd"
-syn match   satysfiKeyword "[^a-zA-Z0-9]in\_s"
-syn match   satysfiKeyword "[^a-zA-Z0-9]command\_s"
-syn match   satysfiKeyword "[^a-zA-Z0-9]type\_s"
+syn match   satysfiKeyword "\_sin\_s"
+syn match   satysfiKeyword "\_scommand\_s"
+syn match   satysfiKeyword "\_stype\_s"
 syn keyword satysfiKeyword match with when as fun
 syn keyword satysfiKeyword val constraint direct of
 syn keyword satysfiKeyword module struct sig end document
