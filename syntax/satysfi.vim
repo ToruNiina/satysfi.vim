@@ -24,10 +24,10 @@ hi def link satysfiKeyword Keyword
 syn match   satysfiPrimitiveType "\_s\(unit\|bool\|int\|float\|length\|string\|inline-text\|inline-boxes\)\_s"
 hi def link satysfiPrimitiveType Type
 
-syn match   satysfiHex     "0[xX]\x\+"
-syn match   satysfiInteger "\(0\|[1-9]\d*\)"
-syn match   satysfiPoint   "\(0\|[1-9]\d*\)pt"
-syn match   satysfiFloat   "\([1-9]\d*\|0\)\.\d*"
+syn match   satysfiHex     "\<0[xX]\x\+"
+syn match   satysfiInteger "\<\(0\|[1-9]\d*\)"
+syn match   satysfiPoint   "\<\(0\|[1-9]\d*\)pt"
+syn match   satysfiFloat   "\<\([1-9]\d*\|0\)\.\d*"
 hi def link satysfiHex     Constant
 hi def link satysfiInteger Constant
 hi def link satysfiPoint   Constant
