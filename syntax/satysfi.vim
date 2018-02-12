@@ -14,11 +14,12 @@ hi def link satysfiComment Comment
 syn keyword satysfiKeyword if then else before while do cycle controls
 syn match   satysfiKeyword "let\(\-\(rec\|mutable\|inline\|block\|math\)\)*"
 syn match   satysfiKeyword "\(inline\|block\|math\)\-cmd"
-syn match   satysfiKeyword "\<in\_s"
-syn keyword satysfiKeyword match with when as fun command
-syn keyword satysfiKeyword inline-cmd block-cmd math-cmd command
-syn keyword satysfiKeyword type val constraint direct of
-syn keyword satysfiKeyword module struct sig end
+syn match   satysfiKeyword "[^a-zA-Z0-9]in\_s"
+syn match   satysfiKeyword "[^a-zA-Z0-9]command\_s"
+syn match   satysfiKeyword "[^a-zA-Z0-9]type\_s"
+syn keyword satysfiKeyword match with when as fun
+syn keyword satysfiKeyword val constraint direct of
+syn keyword satysfiKeyword module struct sig end document
 hi def link satysfiKeyword Keyword
 
 syn match   satysfiPrimitiveType "\_s\(unit\|bool\|int\|float\|length\|string\|inline-text\|inline-boxes\)\_s"
