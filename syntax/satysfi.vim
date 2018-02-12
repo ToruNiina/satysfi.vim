@@ -37,7 +37,7 @@ hi def link satysfiFloat   Constant
 syn match   satysfiOperator "\_s\-\_s"
 syn match   satysfiOperator "\(+\|*\|/\|+\.\|-\.\|+'\|-'\|*'\|/'\|=\)"
 syn match   satysfiOperator "\(<'\|>'\|>\|<\|<=\|>=\|==\|<>\|&&\|||\)"
-syn match   satysfiOperator "\(+++\|++\|:\|::\|->\|-->\|<-\||>\)"
+syn match   satysfiOperator "\(+++\|++\|:\|::\|->\|<-\||>\)"
 syn keyword satysfiOperator mod and not
 hi def link satysfiOperator Operator
 
