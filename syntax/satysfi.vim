@@ -42,7 +42,8 @@ hi def link satysfiOperator Operator
 syn match   satysfiPreProc display "@\(require\|import\):.*$"
 hi def link satysfiPreProc PreProc
 
-syn match   satysfiCommand /\\\l\(\l\|\w\|\-\)*/
+syn match   satysfiCommand "+\(\w\|\-\)\+"
+syn match   satysfiCommand /\\\(\w\|\-\)*/
 hi def link satysfiCommand Statement
 
 let b:current_syntax="satysfi"
