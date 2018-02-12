@@ -41,6 +41,12 @@ syn match   satysfiOperator "\(+++\|++\|:\|::\|->\|<-\||>\)"
 syn keyword satysfiOperator mod and not
 hi def link satysfiOperator Operator
 
+syn match   satysfiVariable "\#\(\w\|\-\)\+"
+hi def link satysfiVariable Identifier
+
+syn region  satysfiQtLiteral start="`" end="`"
+hi def link satysfiQtLiteral String
+
 syn match   satysfiPreProc display "@\(require\|import\):.*$"
 hi def link satysfiPreProc PreProc
 
