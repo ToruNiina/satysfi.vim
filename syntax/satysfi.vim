@@ -12,17 +12,16 @@ syn match satysfiComment /%.*/
 hi def link satysfiComment Comment
 
 syn keyword satysfiKeyword if then else before while do cycle controls
-syn match   satysfiKeyword "let\(\-\(rec\|mutable\|inline\|block\|math\)\)*"
-syn match   satysfiKeyword "\(inline\|block\|math\)\-cmd"
-syn match   satysfiKeyword "\_sin\_s"
-syn match   satysfiKeyword "\_scommand\_s"
-syn match   satysfiKeyword "\_stype\_s"
+syn keyword satysfiKeyword in command type
 syn keyword satysfiKeyword match with when as fun
 syn keyword satysfiKeyword val constraint direct of
 syn keyword satysfiKeyword module struct sig end document
+syn match   satysfiKeyword "let\(\-\(rec\|mutable\|inline\|block\|math\)\)*"
+syn match   satysfiKeyword "\(inline\|block\|math\)\-cmd"
 hi def link satysfiKeyword Keyword
 
-syn match   satysfiPrimitiveType "\(unit\|bool\|int\|float\|length\|string\|inline\-text\|inline\-boxes\)"
+syn keyword satysfiPrimitiveType unit bool int float length string
+syn match   satysfiPrimitiveType "inline\-\(text\|boxes\)"
 hi def link satysfiPrimitiveType Type
 
 syn match   satysfiHex     "\<\-\?0[xX]\x\+"
@@ -52,6 +51,6 @@ hi def link satysfiPreProc PreProc
 
 syn match   satysfiCommand "+\(\w\|\-\)\+"
 syn match   satysfiCommand "\\\(\w\|\-\)\+"
-hi def link satysfiCommand Function
+hi def link satysfiCommand Statement
 
 let b:current_syntax="satysfi"
