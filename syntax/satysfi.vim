@@ -28,10 +28,12 @@ syn match   satysfiHex     "\<\-\?0[xX]\x\+"
 syn match   satysfiInteger "\<\-\?\(0\|[1-9]\d*\)"
 syn match   satysfiPoint   "\<\-\?\(0\|[1-9]\d*\)pt"
 syn match   satysfiFloat   "\<\-\?\([1-9]\d*\|0\)\.\d*"
-hi def link satysfiHex     Constant
-hi def link satysfiInteger Constant
-hi def link satysfiPoint   Constant
-hi def link satysfiFloat   Constant
+syn keyword satysfiBoolean true false
+hi def link satysfiHex     Number
+hi def link satysfiInteger Number
+hi def link satysfiPoint   Number
+hi def link satysfiFloat   Float
+hi def link satysfiBoolean Boolean
 
 syn match   satysfiOperator "\_s\-\_s"
 syn match   satysfiOperator "\(+\|*\|/\|+\.\|-\.\|+'\|-'\|*'\|/'\|=\)"
