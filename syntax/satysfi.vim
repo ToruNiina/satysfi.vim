@@ -22,7 +22,7 @@ syn keyword satysfiKeyword val constraint direct of
 syn keyword satysfiKeyword module struct sig end document
 hi def link satysfiKeyword Keyword
 
-syn match   satysfiPrimitiveType "\_s\(unit\|bool\|int\|float\|length\|string\|inline\-text\|inline\-boxes\)\_s"
+syn match   satysfiPrimitiveType "\(unit\|bool\|int\|float\|length\|string\|inline\-text\|inline\-boxes\)"
 hi def link satysfiPrimitiveType Type
 
 syn match   satysfiHex     "\<\-\?0[xX]\x\+"
