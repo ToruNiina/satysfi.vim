@@ -16,12 +16,12 @@ syn keyword satysfiKeyword in command type
 syn keyword satysfiKeyword match with when as fun
 syn keyword satysfiKeyword val constraint direct of
 syn keyword satysfiKeyword module struct sig end document
-syn match   satysfiKeyword "let\(\-\(rec\|mutable\|inline\|block\|math\)\)*"
-syn match   satysfiKeyword "\(inline\|block\|math\)\-cmd"
+syn keyword satysfiKeyword let let-rec let-mutable let-inline let-block let-math
+syn keyword satysfiKeyword inline-cmd block-cmd math-cmd
 hi def link satysfiKeyword Keyword
 
 syn keyword satysfiPrimitiveType unit bool int float length string
-syn match   satysfiPrimitiveType "inline\-\(text\|boxes\)"
+syn keyword satysfiPrimitiveType inline-text inline-boxes
 hi def link satysfiPrimitiveType Type
 
 syn match   satysfiHex     "\<\(\-\|+\)\?0[xX]\x\+"
@@ -35,8 +35,7 @@ hi def link satysfiUnits   Number
 hi def link satysfiFloat   Float
 hi def link satysfiBoolean Boolean
 
-syn match   satysfiOperator "\_s\-\_s"
-syn match   satysfiOperator "\(+\|*\|/\|+\.\|-\.\|+'\|-'\|*'\|/'\|=\)"
+syn match   satysfiOperator "\(+\|\-\|*\|/\|+\.\|-\.\|+'\|-'\|*'\|/'\|=\)"
 syn match   satysfiOperator "\(<'\|>'\|>\|<\|<=\|>=\|==\|<>\|&&\|||\)"
 syn match   satysfiOperator "\(+++\|++\|:\|::\|->\|<-\||>\)"
 syn keyword satysfiOperator mod and not
