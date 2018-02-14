@@ -24,14 +24,14 @@ syn keyword satysfiPrimitiveType unit bool int float length string
 syn match   satysfiPrimitiveType "inline\-\(text\|boxes\)"
 hi def link satysfiPrimitiveType Type
 
-syn match   satysfiHex     "\<\-\?0[xX]\x\+"
-syn match   satysfiInteger "\<\-\?\(0\|[1-9]\d*\)"
-syn match   satysfiPoint   "\<\-\?\(0\|[1-9]\d*\)pt"
-syn match   satysfiFloat   "\<\-\?\([1-9]\d*\|0\)\.\d*"
+syn match   satysfiHex     "\<\(\-\|+\)\?0[xX]\x\+"
+syn match   satysfiInteger "\<\(\-\|+\)\?\(0\|[1-9]\d*\)"
+syn match   satysfiFloat   "\<\(\-\|+\)\?\([1-9]\d*\|0\)\.\d*"
+syn match   satysfiUnits   "\<\(\-\|+\)\?\(0\|[1-9]\d*\)\(\.\d*\)\?\(pt\|cm\|mm\|inch\)"
 syn keyword satysfiBoolean true false
 hi def link satysfiHex     Number
 hi def link satysfiInteger Number
-hi def link satysfiPoint   Number
+hi def link satysfiUnits   Number
 hi def link satysfiFloat   Float
 hi def link satysfiBoolean Boolean
 
