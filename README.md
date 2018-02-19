@@ -14,6 +14,6 @@ repo = 'ToruNiina/satysfi.vim'
 ```
 
 ```vimscript
-# in .vimrc with NeoBundle
+" in .vimrc with NeoBundle
 NeoBundle 'ToruNiina/satysfi.vim'
 ```
