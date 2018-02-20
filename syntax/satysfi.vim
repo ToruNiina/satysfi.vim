@@ -41,6 +41,9 @@ syn match   satysfiOperator "\(<'\|>'\|>\|<\|<=\|>=\|==\|<>\|&&\|||\)"
 syn keyword satysfiOperator mod and not
 hi def link satysfiOperator Operator
 
+syn match   satysfiConstructor "\<[A-Z]\([a-zA-Z0-9]\|\-\)*\>"
+hi def link satysfiConstructor Type
+
 syn match   satysfiVariable "\#\(\w\|\-\)\+"
 hi def link satysfiVariable Identifier
 
