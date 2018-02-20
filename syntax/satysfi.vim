@@ -35,9 +35,9 @@ hi def link satysfiUnits   Number
 hi def link satysfiFloat   Float
 hi def link satysfiBoolean Boolean
 
-syn match   satysfiOperator "\(+\|\-\|*\|/\|+\.\|-\.\|+'\|-'\|*'\|/'\|=\)"
-syn match   satysfiOperator "\(<'\|>'\|>\|<\|<=\|>=\|==\|<>\|&&\|||\)"
 syn match   satysfiOperator "\(+++\|++\|:\|::\|->\|<-\||>\)"
+syn match   satysfiOperator "\(+\.\|-\.\|+'\|-'\|*'\|/'\|=\|+\|\-\|*\|/\)"
+syn match   satysfiOperator "\(<'\|>'\|>\|<\|<=\|>=\|==\|<>\|&&\|||\)"
 syn keyword satysfiOperator mod and not
 hi def link satysfiOperator Operator
 
